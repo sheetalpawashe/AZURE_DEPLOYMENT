@@ -9,7 +9,7 @@ pool:
 variables:
   GITHUB_REPO: 'https://github.com/sheetalpawashe/RND_Migration.git'
   GITHUB_USER: 'sheetalpawashe'
-  GITHUB_EMAIL: 'youremail@example.com'
+  
 
 steps:
 - script: |
@@ -19,7 +19,7 @@ steps:
 
     # Configure Git user information
     git config --global user.name $(GITHUB_USER)
-    git config --global user.email $(GITHUB_EMAIL)
+    
 
     # Clone the specific branch from the Azure DevOps repository
     echo "Cloning the branch ${BRANCH_NAME} from Azure DevOps"
