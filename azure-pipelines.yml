@@ -24,7 +24,7 @@ steps:
     # Clone the specific branch from the Azure DevOps repository
     echo "Cloning the branch ${BRANCH_NAME} from Azure DevOps"
     git clone --branch ${BRANCH_NAME} --single-branch https://$(AZURE_DEVOPS_PAT)@dev.azure.com/sheetalchatur/AZURE_DEPLOYMENT/_git/AZURE_DEPLOYMENT
-    cd RND_Migration
+    cd AZURE_DEPLOYMENT
 
     # Verify the current branch
     echo "Current branch:"
