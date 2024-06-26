@@ -7,7 +7,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 variables:
-  GITHUB_REPO: 'https://github.com/sheetalpawashe/RND_Migration.git'
+  GITHUB_REPO: 'https://github.com/sheetalpawashe/AZURE_DEPLOYMENT.git'
   GITHUB_USER: 'sheetalpawashe'
   
 
@@ -23,7 +23,7 @@ steps:
 
     # Clone the specific branch from the Azure DevOps repository
     echo "Cloning the branch ${BRANCH_NAME} from Azure DevOps"
-    git clone --branch ${BRANCH_NAME} --single-branch https://$(AZURE_DEVOPS_PAT)@dev.azure.com/sheetalchatur/RND_Migration/_git/RND_Migration
+    git clone --branch ${BRANCH_NAME} --single-branch https://$(AZURE_DEVOPS_PAT)@dev.azure.com/sheetalchatur/AZURE_DEPLOYMENT/_git/AZURE_DEPLOYMENT
     cd RND_Migration
 
     # Verify the current branch
@@ -32,7 +32,7 @@ steps:
 
     # Add GitHub as a remote
     echo "Adding GitHub as a remote"
-    git remote add github https://$(GITHUB_USER):$(GITHUB_TOKEN)@github.com/sheetalpawashe/RND_Migration.git
+    git remote add github https://$(GITHUB_USER):$(GITHUB_TOKEN)@github.com/sheetalpawashe/AZURE_DEPLOYMENT.git
 
     # Verify remotes
     echo "Remotes after adding GitHub:"
