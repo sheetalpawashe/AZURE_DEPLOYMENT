@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set your repository URL
-REPO_URL=https://sheetalchatur@dev.azure.com/sheetalchatur/depc-SC-Providers/_git/depc-SC-Providers
+REPO_URL=https://sheetalchatur@dev.azure.com/sheetalchatur/AZURE_DEPLOYMENT/_git/AZURE_DEPLOYMENT
 # Set the name of the file to be added
 FILE_NAME="azure-pipelines.yml"
 TEMP_DIR="/tmp/repo-copy"
